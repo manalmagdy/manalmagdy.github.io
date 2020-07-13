@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Assignment_2</title>
+</head>
+<body>
+<div id="google_translate_element"></div>
+<div id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <!--Dropdown Menu For Services Pages-->
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link" href="services.html"></a>
+                <button class="srv btn-primary dropdown-toggle" id="srvmenu" type="button" onclick="location.href='services.html'" data-toggle="dropdown"> SERVICES
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="srvmenu">
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="customersub.html" style="text-decoration: none;">Customer</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="hcprofsub.html" style="text-decoration: none;">HealthCare Prof</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="hospitalsub.html" style="text-decoration: none;">Hospitals</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="corporatesub.html" style="text-decoration: none;">Corporate</a></li>   
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html" style="text-decoration: none; "  >BOOK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          <li class="nav-item">
+            
+            <button class="button1" onclick= "location.href='newregister.html'" >LOG IN/SIGN UP</button>
+        
+            
+          </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+
+
+
+</section>
+<div id="wrapper"></div>
+<div class="container"></div>
+  <div class="row"></div>
+      <div class="col-md-6">
+          <div class="well-block">
+              <div class="well-title">
+              
+                  <h2>Book an Appointment</h2> <br> 
+                  <h6> <img src="oxygen.png" alt="oxygen.png" width="40" height="40">  Patient's Details</h6>
+                  <p>Tap into our network of medical specialists. Please complete the form below.</p>
+                  <p>Note: Fields marked with an asterisk "*" are mandatory.</p>
+
+                </div>
+              <form action="action.php" method="GET">
+                  <!-- Form start -->
+                      <!--Patient's Details-->
+                      <div class="inner">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label class="control-label"></label>
+                              <span>Patient's Name*</span>
+                              <input id="patient" name="name" type="text" placeholder="First & Last Name" class="form-control input-md">
+                          </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label class="control-label" ></label>
+                              <span>Email*</span>
+                              <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+                          </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label class="control-label" ></label>
+                              <span>Contact No*</span>
+                              <input id="tel" name="contact" type="tel" pattern="[0-9]{3}-[0-9]{8}" placeholder="012-12345678" class="form-control input-md">
+                            </div>
+                      </div>
+                    <!-- Text input -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="control-label" ></label>
+                          <span>Date of birth*</span>
+                            <input type="date" id="myDate" value="2014-02-09" class="form-control input-md">
+                      </div>
+                  </div>
+                      <!-- Text input -->
+                      <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="control-label" ></label>
+                            <span>NRIC/Passport no.*</span>
+                            <input id="Passport" name="Passport" type="text" placeholder="KS5142092" class="form-control input-md"> 
+                          </div>
+                      </div> 
+                        <!--Appointment Details-->                                        
+                      <h6> <img src="appointment.png" alt="appointment.png" width="40" height="40"> Appointment Details</h6>
+                      <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" for="country"></label>
+                                <span>Location*</span>
+                                <select id="country" name="location" class="form-control input-md">
+                                  <option value="Malaysia">Malaysia</option>
+                                  <option value="Singapore">Singapore</option>
+                                  <option value="Hong Kong">Hong Kong</option>
+                                  <option value="Thailand">Thailand</option>
+                              </select>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" ></label>
+                                <span>Preferred hospital(optional)</span>
+                                <input id="name" name="hospital" type="text" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Text input -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="control-label" ></label>
+                          <span>Preferred appointment date(optional)</span>
+                            <input type="date" id="appdate" value="2014-02-09"  class="form-control input-md">
+                      </div>
+                  </div>
+                  <!-- Select Basic -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label"></label>
+                        <span>Preferred Time</span>
+                        <select id="time" name="time" class="form-control">
+                            <option value="8:00 to 9:00">8:00 to 9:00</option>
+                            <option value="9:00 to 10:00">9:00 to 10:00</option>
+                            <option value="10:00 to 1:00">10:00 to 1:00</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Text input -->
+                <div class="col-md-12">
+                  <div class="form-group">
+                <label class="control-label" ></label>
+                <span>Message</span>
+                 <textarea cols="100" rows="6" class="form-control input-md">Briefly explain your medical condition here.</textarea>
+                </div>
+              </div>    
+                      <!-- Button -->
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <button id="singlebutton" name="singlebutton" class="btn btn-default"><span>Book Appointment</span></button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+              <!-- form end -->
+            </div>   
+            </body>
+</html>

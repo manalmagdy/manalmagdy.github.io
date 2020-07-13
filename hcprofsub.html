@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Assignment_2</title>
+</head>
+<body>
+<div id="google_translate_element"></div>
+<div id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <!--Dropdown Menu For Services Pages-->
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link" href="services.html"></a>
+                <button class="srv btn-primary dropdown-toggle" id="srvmenu" type="button" onclick="location.href='services.html'" data-toggle="dropdown"> SERVICES
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="srvmenu">
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="customersub.html" style="text-decoration: none;">Customer</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="hcprofsub.html" style="text-decoration: none;">HealthCare Prof</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="hospitalsub.html" style="text-decoration: none;">Hospitals</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="corporatesub.html" style="text-decoration: none;">Corporate</a></li>   
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html" style="text-decoration: none; "  >BOOK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          <li class="nav-item">
+            
+            <button class="button1" onclick= "location.href='newregister.html'" >LOG IN/SIGN UP</button>
+        
+            
+          </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+<!--Customers Banner-->
+<div id="hcp-banner">
+    <div class="hcpbnr-container">
+      <img src="imge/hospital.jpg" class="hcp-bnr-img" alt="banner">
+      <div class="inner-hcpbnr-container">
+        <p>HealthCare Professionals</p>
+      </div>
+    </div>
+  </div>
+
+<!--HealthCare Points-->
+<div id="hcp-points">
+    <div class="hcp-pnts-row">
+        <div class="hcp-pnts-left">
+            <h4>Healthcare Professional Benefits</h4>
+            <ol>
+            
+                <li style="margin-bottom: 30px;">List your Practice Online</li>
+      
+                <li style="margin-bottom: 30px;">Attract New Patients</li>
+                
+                <li style="margin-bottom: 30px;">Appointment Scheduling Available 24/7</li>
+             
+                <li style="margin-bottom: 30px;">Optimise Appointment Scheduling</li>
+        
+                <li style="margin-bottom: 30px;">Patient appointment Reminders</li>
+             
+                <li >Online Marketplace for Employee Benefits</li>
+            
+            </ol>
+        </div>
+        <div class="hcp-img-right">
+            <img src="imge/hcprofpnts.jpg" class="hcp-img" alt="healthcare professional icon">
+        </div>
+    </div>
+  </div>
+
+<div id="hcp-forms">
+    <div class="hcp-form-container">
+        <form action="action.php" method="GET">
+            <h3 style="margin-bottom: 200px; ">Are you a Healthcare Professional? List your practice on BookDoc Today!</h3>
+            <br>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label for="hcpfname">First Name*</label>
+                </div>
+            </div>
+            <div class="col-75">
+                <input type="text" id="hcpfname" name="hcpfname">
+            </div>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label for="hcplname">Last Name*</label>
+                </div>
+            </div>
+            <div class="col-75">
+                <input type="text" id="hcplname" name ="hcplname">
+            </div>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label for="hcpemail">Email*</label>
+                </div>
+            </div>
+            <div class="col-75">
+                <input type="text" id="hcpemail" name="hcpemail">
+            </div>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label for="hcpphone">Phone Number*</label>
+                </div>
+            </div>
+            <div class="col-75">
+                <input type="text" id="hcpphone" name="hcpphone">
+            </div>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label for="hcppostcode">Postal Code*</label>
+                </div>
+            </div>
+            <div class="col=75">
+                <input type="text" id="hcppostcode" name="hcppostcode">
+            </div>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label for="hcphosname">Clinic/Hospital Name*</label>
+                </div>
+            </div>
+            <div class="col-75">
+                <input type="text" id="hcphosname" name="hcphosname">
+            </div>
+            <div class="hcp-form-row">
+                <div class="col-25">
+                    <label id="hcpabout-2">Where did you hear about us?*</label>
+                </div>
+            </div>
+            <div class="col-75">
+                <select>
+                    <option>Newspaper</option>
+                    <option>Radio</option>
+                    <option>Friends/Family</option>
+                    <option>Online Ad</option>
+                    <option>Social Media</option>
+                </select>
+                <input type="hidden" id="hcpabout" name="hcpabout">
+            </div>
+            <br>
+            <div class="hcp-form-row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+  </div>
+
+<div id="hcprof-dwnldapp">
+    <div class="inner-hcprofapp-dwnld">
+      <div class="inner-hcprof-intrd">
+        <p><b>Interested in partnering with BookDoc?<br>Contact us at <a href="mailto:management@bookdoc.com">management@bookdoc.com</a></b></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <img src="logo.png" alt="logo" class="logo-footer">
+        <div class="social-media">
+          <a href="https://twitter.com/BookDoc"><i class="twitter-logo"><img src="https://img.icons8.com/nolan/64/twitter.png" alt="https://www.twitter.com"/></i></a>
+          <a href="https://www.linkedin.com/company/bookdoc/"><i class="linkedin-logo"><img src="https://img.icons8.com/nolan/64/linkedin.png" alt="https://:www.linkedin.com"/></i></a>
+          <a href="https://www.instagram.com/bookdoc4u/"><i class="instagram-logo"> <img src="https://img.icons8.com/nolan/64/instagram-new.png" alt="https://instagram.com"/></i></a>
+          <a href="https://www.youtube.com/channel/UCzXEKbAQejcj1Y8uFiuVipQ"><i class="youtube-logo"><img src="https://img.icons8.com/nolan/64/youtube-squared.png" alt="https:/www.youtube.com"/></i></a>
+          <a href="https://www.facebook.com/BookDoc4u/"><i class="facebook-logo"><img src="https://img.icons8.com/nolan/64/facebook-circled.png"  alt="https://www.facebook.com"/></i></a>
+        </div>
+       
+        <p>&copy; 2020 Healthcare Centre All Right Reserved</p>
+      </div>
+      <div class="right-col">
+        <h1>Our Newsletter</h1>
+        <div class="border"></div>
+        <p>Enter your Email to get our news and updates.</p>
+        <form  class="newsletter-form">
+          <input type="text" class="txtb" placeholder="Enter Your E-mail">
+          <input type="submit" class="btn-footer" value="submit">
+        </form>
+
+
+      </div>
+    </div>
+    </footer>
+</body>
+</html>

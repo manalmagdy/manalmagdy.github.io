@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+  </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Assignment_2</title>
+</head>
+<body>
+<div id="google_translate_element"></div>
+<div id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <!--Dropdown Menu For Services Pages-->
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link" href="services.html"></a>
+                <button class="srv btn-primary dropdown-toggle" id="srvmenu" type="button" onclick="location.href='services.html'" data-toggle="dropdown"> SERVICES
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="srvmenu">
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="customersub.html" style="text-decoration: none;">Customer</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="hcprofsub.html" style="text-decoration: none;">HealthCare Prof</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="hospitalsub.html" style="text-decoration: none;">Hospitals</a></li>
+                  <li role="presentation"><a class="menu-a" role="menuitem" tabindex="-1" href="corporatesub.html" style="text-decoration: none;">Corporate</a></li>   
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html" style="text-decoration: none; "  >BOOK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          <li class="nav-item">
+            
+            <button class="button1" onclick= "location.href='newregister.html'" >LOG IN/SIGN UP</button>
+        
+            
+          </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+
+<div id="banner">
+  <div class="container">
+  <div class= "row">
+  <div class= "col-md-6">
+    
+  <p class="promo-title"> About Us</p>
+  <p>BookDoc, with presence in Malaysia, Singapore, Indonesia, Hong Kong and Thailand, is an online platform that operates across the healthcare continuum connecting patients to healthcare professionals anytime and anywhere, while incentivising all to stay active.</p>
+  <div class='banner-right-col'>
+    <img src="ask_a_doctor.png" alt="ask_a_doctor" class="img-fluid">
+  </div>
+  <div class="banner-right-col">
+  <div class="banner-text">
+     <p>The company is backed by a diverse group of investors from entrepreneurs to seasoned healthcare and insurance professionals, banker, regulators as well as ICT professionals. It has made records in achieving the highest pre-seed and seed valuation in Asia Technology Start-up history. It is available online at www.bookdoc.com, App Store and Google Play Store.</p>
+  
+  </div>
+  <div class="col-md-6 text-center">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+  <section id= "team">
+    <div class="container text-center">
+      <h1 class="title">MEET OUR TEAM</h1>
+    <div class="container">
+      <h3 class="founder">FOUNDERS</h3>
+    </div>
+    <div class="row">
+    <div class="col-md-4 team">
+    <img src="chevy.jpg" alt="chevy" class="team-img">
+    <h5> Dato' Chevy Beh</h5>
+    <p><i>Founder</i></p>
+    </div>
+    <div class="col-md-4 team">
+      <img src="joel.jpg" alt="joel" class="team-img" >
+      <h5> Joel Neol Eu Jin</h5>
+      <p><i>Co-Founder</i></p>
+      </div>
+    <div class="container">
+      <h3 class="management">MANAGEMENT TEAM</h3>
+      <p>Malaysia And Singapore</p>
+    </div>
+    <div class="col-md-4 team">
+      <img src="reuben.jpg" alt="reuben" class="team-img">
+      <h5>Reuben Poh</h5>
+      <p><i>Vice President (Malaysia)</i></p>
+      <p><i>Business Developtment</i></p>
+      </div>
+    <div class="col-md-4 team">
+      <img src="wayne.jpg" alt="wayne" class="team-img">
+      <h5>Wayne Chang</h5>
+      <p><i>General Manager (Malaysia)</i></p>
+      <p><i>Business Developtment</i></p>
+      </div>
+      <div class="col-md-4 team">
+        <img src="kuan.jpg" alt="kuan" class="team-img">
+        <h5>Poh Bee Kuan</h5>
+        <p><i>Vice President(Singapore)</i></p>
+        
+        </div>
+        </div>
+    
+    </div>
+  </section>
+  
+
+
+  
+
+  <section id="how-different">
+  <div class="container">
+    <h1 class="title text-center">WHY CHOOSE US?</h1>
+  <div class="row">
+  <div class="col-md-6 how-different">
+    <p class="how-title">Why we're different</p>
+  
+      <i><b>For The Financially Inclined</b></i>
+        <p>Highest pre-seed and seed valuation in Asia tech app history. Since its founding, BookDoc has secured over seven figures in investment funding ensuring business continuity, sustainability, and growth.</p>
+        <p>Contracts with large corporate clients including multinational and publicly listed companies.
+          A regional player with presence currently in five countries and 20 cities, and an on-going effort to penetrate new markets in the region over the next 12 months.</p>
+      
+      <i><b>For The Business Inclined</b></i>
+      <p>We are the 1st and only official platform endorsed by Ministry of Health.</p>
+      <p>We are also Official endorsed by the Ministry of Tourism and Culture Malaysia, Ministry of Youth Sports, Military Armed Forces, Ministry of Education, Social Security of Malaysia and Royal Police Force of Malaysia.</p>
+      <p>Our team has more than 150 years of combined work experience, comprising seasoned healthcare, ICT and insurance professionals, entrepreneurs, bankers, regulators and policy makers, with deep management expertise across Asia.</p>
+      <p><i> And so much more! </i></p>
+   
+  </div>
+  <div class="col-md-6">
+    <img src="u.png" alt="u" class="img-fluid" style="margin-top: 100px; margin-left:100px;">
+  </div>
+  </div>
+  </div>
+  </section>
+  
+ 
+  
+  <section id="careers">
+    <div class="career-left-col">
+      <img src="art.png" alt="art">
+    </div>
+    <div class="careers-right-col">
+      <div class="about-text">
+        <h1>CAREERS AND OPPORTUNITIES</h1>
+        <p>BookDoc, based in Kuala Lumpur, aims to improve access to care across Southeast Asia.</p>
+        <p>The management team has a combined business experience of more than 150 years, comprising seasoned healthcare, ICT and insurance professionals, entrepreneurs, bankers, regulators and policy makers, with deep management expertise across Asia.<p>
+        <h5>We have openings for the following positions: </h5>
+          
+            <p>-Software developer (based in Malaysia)</p>
+            <p>-Human resource (based in Malaysia)</p>
+            <p>-Business Development (for Malaysia, Singapore, Indonesia, Thailand, Philippines, Hong Kong)</p>
+            <p>-Sales and Marketing (for Malaysia, Singapore, Indonesia, Thailand, Philippines, Hong Kong)</p>
+            <p>-Internship (based in Malaysia)</p>
+          
+         <p style="font-style: italic;">FOR INQUIRIES EMAIL:<a href="mailto:recruit@bookdoc.com">recruit@bookdoc.com</a></p>
+          
+      </div>
+    </div>
+    
+  </section>
+  
+  
+    <div id="partners">
+    <div class="container">
+      <h2 class="text-center font-weight-bold">Our Partners</h2> <br> <br>
+      <div class="customer-logos slider">
+        <div class="partner_logo"><img src="L1.png" alt="logo"></div>
+        <div class="partner_logo"><img src="L2.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L3.png" alt="logo"></div>
+        <div class="partner_logo"><img src="L4.png" alt="logo"></div>
+        <div class="partner_logo"><img src="L5.gif" alt="logo"></div>
+        <div class="partner_logo"><img src="L6.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L7.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L8.png" alt="logo"></div>
+        <div class="partner_logo"><img src="L9.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L10.png" alt="logo"></div>
+        <div class="partner_logo"><img src="L11.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L12.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L13.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L14.jpg" alt="logo"></div>
+        <div class="partner_logo"><img src="L15.png" alt="logo"></div>
+        <div class="partner_logo"><img src="L16.jpg" alt="logo"></div>
+   
+      </div>
+    </div>
+  
+    <p class="copy text-center font-weight-bold">&copy; 2020 Healthcare Centre All Right Reserved</p>
+  </div>
+</body>
+</html>
